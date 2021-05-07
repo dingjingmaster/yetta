@@ -1,12 +1,15 @@
 TEMPLATE = subdirs
 
-SUBDIRS +=\
+CONFIG  += c++11 link_pkgconfig no_keywords
+
+SUBDIRS += \
     src                     \
+    daemon                  \
 
 
-OTHER_FILES +=\
+OTHER_FILES += \
     $$PWD/README.md         \
-    $$PWD/LICENSE
+    $$PWD/LICENSE           \
 
 
 include($$PWD/translations/translations.pri)
